@@ -1,0 +1,78 @@
+$mainColor: rgba(2, 30, 79, 0.8);
+$backgroundColor: rgba(255, 255, 255, 0.8);
+$secondColor: #dbd6d3;
+
+.full-screen-bg {
+  height: 100vh;
+  background-size: cover;
+  background-image: url(https://pleyades569.com/images/Inicio/slider-item-1.webp);
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  .inner-container {
+    width: 753px;
+    height: 529px;
+    position: relative;
+    background: $backgroundColor;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+
+    .title-container {
+      width: 753px;
+      padding: 20px;
+      background: $mainColor;
+      justify-content: center;
+      display: inline-flex;
+
+      .title {
+        width: 325px;
+        text-align: center;
+        color: white;
+        font-size: 48px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word;
+      }
+    }
+
+    .input-container {
+      &.email,
+      &.password {
+        background: $mainColor;
+        border-radius: 15px;
+        overflow: hidden;
+        justify-content: flex-start;
+        align-items: center;
+        display: inline-flex;
+        gap: 76px;
+      }
+      
+    }
+    .icon-container {
+        width: 45px;
+        height: 45px;
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+
+        // Icon
+        .icon {
+          width: 45px;
+          height: 45px;
+        }
+
+        // Colored bar
+        .colored-bar {
+          width: 37.5px;
+          height: 30px;
+          background: #021e4f;
+        }
+      }
+  }
+}
