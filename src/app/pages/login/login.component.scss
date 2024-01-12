@@ -35,44 +35,39 @@ $secondColor: #dbd6d3;
         font-size: 48px;
         font-family: Inter;
         font-weight: 400;
-        word-wrap: break-word;
       }
     }
 
+    .btn {
+      color: white;
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 20px;
+      width: 150px;
+      margin-bottom: 20px;
+      background: $mainColor; 
+      border-radius: 15px; 
+      overflow: hidden; 
+      justify-content: center; 
+      align-items: center; 
+      display: inline-flex;
+      text-align: center;
+    }
+    .inputs{
+      margin-top: 40px;
+    }
     .input-container {
       &.email,
       &.password {
-        background: $mainColor;
+        color: $backgroundColor;
         border-radius: 15px;
         overflow: hidden;
         justify-content: flex-start;
         align-items: center;
         display: inline-flex;
-        gap: 76px;
+        font-size: 20px;
+        font-family: Inter;     
       }
-      
-    }
-    .icon-container {
-        width: 45px;
-        height: 45px;
-        position: relative;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        display: flex;
-
-        // Icon
-        .icon {
-          width: 45px;
-          height: 45px;
-        }
-
-        // Colored bar
-        .colored-bar {
-          width: 37.5px;
-          height: 30px;
-          background: #021e4f;
-        }
-      }
+    }    
   }
 }
